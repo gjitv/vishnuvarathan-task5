@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>GJ Global IT ventures</title>
+</head>
+
+<body>
+  <div class="bg-cyan-400">
+    <nav class="bg-white shadow p-5 md:flex md:items-center md:justify-between">
+      <div class="flex items-center justify-between">
+        <span class="text-xl flex font-Poppins cursor-pointer items-center">
+          <img class="h-10 pe-4 inline cursor-pointer" src="./assets/gjimg.jfif" />
+          GJ GLOBAL IT VENTURES
+        </span>
+        <span class="text-2xl cursor-pointer md:hidden block mx-4">
+          <ion-icon onclick="Menu(this)" name="menu-outline"></ion-icon>
+        </span>
+      </div>
+      <div>
+        <ul
+          class="md:flex md:items-center z-0 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-4 md:opactity-0 opacity-100 top-[-400px] transition-all ease-in duration-500 bg-white">
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400" href="#">HOME</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400 " href="#">ABOUT</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 duration:500 hover:text-cyan-400 " href="#">SERVICES</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l  hover:text-cyan-400 " href="#">CONTACT</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400" href="#">LOGIN</a>
+          </li>
+          <button class="bg-cyan-400 px-5 py-2 text-white font-Poppins mx-4 duration:500 hover:bg-cyan-500 rounded">Get
+            Started</button>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <div class="p-6 max-w-sm mt-4 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+      <div class="shrink-0">
+        <img class="h-12 w-12" src="./assets/gjimg.jfif" alt="ChitChat Logo">
+      </div>
+      <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message!</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const Menu = (e) => {
+      let list = document.querySelector("ul");
+      e.name === "menu-outline" ? (e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : (e.name = "menu-outline", list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"))
+    }
+  </script>
+</body>
+
+</html>
