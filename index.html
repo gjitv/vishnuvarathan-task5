@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>GJ Global IT ventures</title>
+</head>
+
+<body>
+  <div class="bg-cyan-400">
+    <nav class="bg-white shadow p-5 md:flex md:items-center md:justify-between">
+      <div class="flex items-center justify-between">
+        <span class="text-xl flex font-Poppins cursor-pointer items-center">
+          <img class="h-10 pe-4 inline cursor-pointer" src="./assets/gjimg.jfif" />
+          GJ GLOBAL IT VENTURES
+        </span>
+        <span class="text-2xl cursor-pointer md:hidden block mx-4">
+          <ion-icon onclick="Menu(this)" name="menu-outline"></ion-icon>
+        </span>
+      </div>
+      <div>
+        <ul
+          class="md:flex md:items-center z-0 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-4 md:opactity-0 opacity-100 top-[-400px] transition-all ease-in duration-500 bg-white">
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400" href="#">HOME</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400 " href="#">ABOUT</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 duration:500 hover:text-cyan-400 " href="#">SERVICES</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l  hover:text-cyan-400 " href="#">CONTACT</a>
+          </li>
+          <li class="mx-4 md:my-0 my-6">
+            <a class="text-l duration:500 hover:text-cyan-400" href="#">LOGIN</a>
+          </li>
+          <button class="bg-cyan-400 px-5 py-2 text-white font-Poppins mx-4 duration:500 hover:bg-cyan-500 rounded">Get
+            Started</button>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <div class="w-full mx-auto">
+
+      <div id="default-carousel" class="relative" data-carousel="static">
+           
+            <div class="overflow-hidden relative h-[70vh] rounded-lg">
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                    <img src="./assets/tail4.avif" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./assets/tail3.jpg" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./assets/tail2.jpg" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+            </div>
+          
+            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            
+            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="hidden">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+              <div class="w-full max-w-xs rounded bg-white md:absolute top-20 right-40 z-30">
+                <form class="bg-white rounded px-8 pt-8 pb-6">
+                  <div class="mb-5">
+                    <label class="block text-gray-700 text-md font-bold mb-2" for="username">
+                      Username
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                  </div>
+                  <div class="mb-6">
+                    <label class="block text-gray-700 text-md font-bold mb-2" for="password">
+                      Password
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="**************">
+                  </div>
+                  <div class="flex items-left flex-col justify-between">
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                      Forgot Password?
+                    </a>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-5 rounded focus:outline-none focus:shadow-outline" type="button">
+                      Sign In
+                    </button>
+                    
+                  </div>
+                </form>
+              </div>
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js">
+    const Menu = (e) => {
+      let list = document.querySelector("ul");
+      e.name === "menu-outline" ? (e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : (e.name = "menu-outline", list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"))
+    }
+  </script>
+</body>
+
+</html>
