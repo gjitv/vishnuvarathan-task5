@@ -7,11 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="./styles.css">
   <title>GJ Global IT ventures</title>
 </head>
 
 <body>
-  <div class="bg-cyan-400">
+  <div class="bg-cyan-400" id="home">
     <nav class="bg-white shadow p-5 md:flex md:items-center md:justify-between">
       <div class="flex items-center justify-between">
         <span class="text-xl flex font-Poppins cursor-pointer items-center">
@@ -24,18 +26,18 @@
       </div>
       <div>
         <ul
-          class="md:flex md:items-center z-0 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-4 md:opactity-0 opacity-100 top-[-400px] transition-all ease-in duration-500 bg-white">
+          class="md:flex md:items-center z-30 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-4 md:opactity-0 opacity-100 top-[-400px] transition-all ease-in duration-500 bg-white">
           <li class="mx-4 md:my-0 my-6">
-            <a class="text-l duration:500 hover:text-cyan-400" href="#">HOME</a>
+            <a class="text-l duration:500 hover:text-cyan-400" href="#home">HOME</a>
           </li>
           <li class="mx-4 md:my-0 my-6">
-            <a class="text-l duration:500 hover:text-cyan-400 " href="#">ABOUT</a>
+            <a class="text-l duration:500 hover:text-cyan-400 " href="#about">ABOUT</a>
           </li>
           <li class="mx-4 md:my-0 my-6">
             <a class="text-l duration:500 duration:500 hover:text-cyan-400 " href="#">SERVICES</a>
           </li>
           <li class="mx-4 md:my-0 my-6">
-            <a class="text-l  hover:text-cyan-400 " href="#">CONTACT</a>
+            <a class="text-l  hover:text-cyan-400 " href="#contact">CONTACT</a>
           </li>
           <li class="mx-4 md:my-0 my-6">
             <a class="text-l duration:500 hover:text-cyan-400" href="#">LOGIN</a>
@@ -47,70 +49,153 @@
     </nav>
   </div>
   <div>
-    <div class="w-full mx-auto">
+  <div class="w-full mx-auto">
 
-      <div id="default-carousel" class="relative" data-carousel="static">
-           
-            <div class="overflow-hidden relative h-[70vh] rounded-lg">
-               
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                    <img src="./assets/tail4.avif" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-                
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./assets/tail3.jpg" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-                
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./assets/tail2.jpg" class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-            </div>
-          
-            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            </div>
-            
-            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span class="hidden">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span class="hidden">Next</span>
-                </span>
-            </button>
-              <div class="w-full max-w-xs rounded bg-white md:absolute top-20 right-40 z-30">
-                <form class="bg-white rounded px-8 pt-8 pb-6">
-                  <div class="mb-5">
-                    <label class="block text-gray-700 text-md font-bold mb-2" for="username">
-                      Username
-                    </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
-                  </div>
-                  <div class="mb-6">
-                    <label class="block text-gray-700 text-md font-bold mb-2" for="password">
-                      Password
-                    </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="**************">
-                  </div>
-                  <div class="flex items-left flex-col justify-between">
-                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-                      Forgot Password?
-                    </a>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-5 rounded focus:outline-none focus:shadow-outline" type="button">
-                      Sign In
-                    </button>
-                    
-                  </div>
-                </form>
-              </div>
+    <div id="default-carousel" class="relative" data-carousel="static">
+
+      <div class="overflow-hidden relative h-[70vh] rounded-lg">
+
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <!-- <span
+            class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+            Slide</span> -->
+          <img src="./assets/tail4.avif"
+            class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+            alt="...">
         </div>
+
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/tail3.jpg"
+            class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+            alt="...">
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./assets/tail2.jpg"
+            class="block object-cover absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+            alt="...">
+        </div>
+      </div>
+
+      <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+           data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+      </div>
+
+      <button type="button"
+        class="flex absolute top-0 left-0 md:bottom-0 bottom-170 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="hidden">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="flex absolute top-0 right-0 md:bottom-0 bottom-170 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+           </svg>
+           <span class="hidden">Next</span>
+         </span>
+      </button>
+       <div class="w-full max-w-xs rounded bg-white md:absolute top-20 right-40 z-30">
+         <form class="bg-white rounded px-8 pt-8 pb-6">
+          <div class="mb-5">
+             <label class="block text-gray-700 text-md font-bold mb-2" for="username">
+               Username
+             </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username" type="text" placeholder="Username">
+           </div>
+           <div class="mb-6">
+             <label class="block text-gray-700 text-md font-bold mb-2" for="password">
+              Password
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline"
+              id="password" type="password" placeholder="**********">
+           </div>
+           <div class="flex items-left flex-col justify-between">
+             <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+               Forgot Password?
+            </a>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-5 rounded focus:outline-none focus:shadow-outline"
+              type="button">
+               Sign In
+             </button>
+          </div>
+        </form>
+       </div>
+  </div>
+  </div>
+  <div class="flex flex-col w-full justify-center" id="about">
+    <p class=" m-auto text-3xl font-medium md:p-10 p-2">ABOUT US</p>
+    <div class="flex md:flex-row flex-col">
+        <div class="md:w-6/12 w-full px-10 pt-10 py-14">
+            <p class="text-3xl font-light">Our Vision</p>
+            <p class="text-xl pt-3 font-light">We at GJ focus on providing the best user experience by using cutting-edge technology to assist our clients to overcome challenges across the sectors like blockchain development services, java stack development service. Our approach of providing customized solutions ensures that our clients get the most scalable, secure, and fast services, which are supported with high-quality customer support which allows them to expand and offer a wider variety of digital solutions.</p>
+        </div>
+        <div class=" relative flex md:w-6/12 w-full items-center justify-center ps-15 py-10">
+          <div class="">
+            <img class="w-40  h-64 absolute top-2 md:left-10 left-8 z-0" src="./assets/ver1.jfif">
+            <img class="w-40  h-64  absolute top-2 md:left-28 left-16 z-0" src="./assets/ver2.jpg">
+            <img class="w-40  h-64  absolute top-2 md:left-48 left-24 z-0" src="./assets/ver3.jfif">
+            <img class="w-40  h-64 absolute top-2 md:left-64 left-32 z-0" src="./assets/ver4.jpg">
+            <img class="w-40  h-64 absolute top-2 md:left-80 left-36 z-0" src="./assets/ver1.jfif">
+            <img class="w-40 h-64 absolute top-2 md:left-96 left-40 z-0" src="./assets/ver2.jpg">
+          </div>     
+        </div>
+    </div>
+  </div>
+  <div class="flex flex-col w-full justify-center md:pb-20 md:mt-0 mt-56 bg-slate-200" id="contact">
+    <p class=" m-auto text-3xl font-medium p-10">CONTACT US</p>
+    <div class="flex md:flex-row flex-col md:mx-20 mx-0 mb:20 justify-between">
+      <div class=" flex flex-col w-50 p-10  md:mx-0 mx-5 md:my-0 my-5 items-center justify-center bg-slate-50">
+        <p class="text-3xl font-light pb-8"> MEET US</p>
+        <p class="md:text-2xl text-xl font-light py-1">205, North indra Nagar</p>
+        <p class="md:text-2xl text-xl font-light py-1">Palani</p>
+        <p class="md:text-2xl text-xl font-light py-1">Dindigul, TanilNadu</p>
+        <p class="md:text-2xl text-xl font-light py-1">98745375372</p>
+      </div>
+        <div class=" flex flex-col w-50 p-10  md:mx-0 mx-5 md:my-0 my-5 items-center justify-center bg-slate-50">
+          <p class="text-3xl font-light pb-8"> MEET US</p>
+          <p class="md:text-2xl text-xl font-light py-1">205, North indra Nagar</p>
+          <p class="md:text-2xl text-xl font-light py-1">Palani</p>
+          <p class="md:text-2xl text-xl font-light py-1">Dindigul, TanilNadu</p>
+          <p class="md:text-2xl text-xl font-light py-1">98745375372</p>
+        </div>
+        <div class=" flex flex-col w-50 p-10  md:mx-0 mx-5 md:my-0 my-5 items-center justify-center bg-slate-50">
+          <p class="text-3xl font-light pb-8"> MEET US</p>
+          <p class="md:text-2xl text-xl font-light py-1">205, North indra Nagar</p>
+          <p class="md:text-2xl text-xl font-light py-1">Palani</p>
+          <p class="md:text-2xl text-xl font-light py-1">Dindigul, TanilNadu</p>
+          <p class="md:text-2xl text-xl font-light py-1">98745375372</p>
+        </div>
+      <div class=" flex flex-col w-50 p-10  md:mx-0 mx-5 md:my-0 my-5 items-center justify-center bg-slate-50">
+        <p class="text-3xl font-light pb-8"> MEET US</p>
+        <p class="md:text-2xl text-xl font-light py-1">205, North indra Nagar</p>
+        <p class="md:text-2xl text-xl font-light py-1">Palani</p>
+        <p class="md:text-2xl text-xl font-light py-1">Dindigul, TanilNadu</p>
+        <p class="md:text-2xl text-xl font-light py-1">98745375372</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black flex flex-col items-center justify-center gap-10px" id="footer">
+    <img class="h-10 mt-10 mb-3 inline cursor-pointer" src="./assets/gjimg.jfif" />
+    <p class="text-white mb-10 font-light">2023.GJGlobal ITventures Pvt.AllRightsReserved.</p> 
   </div>
 
 
@@ -133,13 +218,12 @@
 
 
 
-
-  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js">
-    const Menu = (e) => {
-      let list = document.querySelector("ul");
-      e.name === "menu-outline" ? (e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : (e.name = "menu-outline", list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"))
-    }
-  </script>
+    <script>
+      const Menu = (e) => {
+        let list = document.querySelector("ul");
+        e.name === "menu-outline" ? (e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : (e.name = "menu-outline", list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"))
+      }
+    </script>
 </body>
 
 </html>
